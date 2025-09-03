@@ -45,7 +45,7 @@ jobs:
    runs-on: [self-hosted]
    steps:
       - name: docker pull image
-        run: docker pull sevenajay/candycrush:latest
+        run: docker pull abhishek450/candycrush:latest
 
       - name: Image scan
         run: trivy image abhishek450/candycrush:latest > trivyimagedeploy.txt  
